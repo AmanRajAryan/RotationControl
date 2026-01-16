@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="System Rotation Control"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select rotation and tap Apply. The lock will persist even when you minimize this app."
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <RadioGroup
+        android:id="@+id/rotationGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/radioAuto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Auto-Rotation"
+            android:textSize="18sp"
+            android:padding="12dp"/>
+
+        <RadioButton
+            android:id="@+id/radioPortrait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Portrait (0°)"
+            android:textSize="18sp"
+            android:padding="12dp"/>
+
+        <RadioButton
+            android:id="@+id/radioLandscape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Landscape (90°)"
+            android:textSize="18sp"
+            android:padding="12dp"/>
+
+        <RadioButton
+            android:id="@+id/radioReversePortrait"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reverse Portrait (180°)"
+            android:textSize="18sp"
+            android:padding="12dp"/>
+
+        <RadioButton
+            android:id="@+id/radioReverseLandscape"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reverse Landscape (270°)"
+            android:textSize="18sp"
+            android:padding="12dp"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/applyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply Rotation Lock"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Rotation Lock"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:backgroundTint="#D32F2F"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚠️ Required Permissions:\n• Display over other apps\n• Modify system settings"
+        android:textSize="12sp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"/>
+
+</LinearLayout>
