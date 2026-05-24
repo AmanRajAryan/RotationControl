@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RotationControl</string>
+    
+    <string name="accessibility_service_description">RotationControl</string>
+</resources>

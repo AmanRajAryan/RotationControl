@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/notification_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rotation Locked"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorPrimary"
+        android:paddingBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/notification_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Currently: Portrait"
+        android:textSize="14sp"
+        android:textColor="?android:attr/textColorSecondary"
+        android:paddingBottom="8dp"/>
+
+    <!-- First row of buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+
+        <Button
+            android:id="@+id/btn_portrait"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="Portrait"
+            android:textSize="11sp"
+            android:textAllCaps="false"
+            android:padding="4dp"
+            android:layout_marginEnd="4dp"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn_landscape"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="Landscape"
+            android:textSize="11sp"
+            android:textAllCaps="false"
+            android:padding="4dp"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+    </LinearLayout>
+
+    <!-- Second row of buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+
+        <Button
+            android:id="@+id/btn_reverse_portrait"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="Rev Portrait"
+            android:textSize="11sp"
+            android:textAllCaps="false"
+            android:padding="4dp"
+            android:layout_marginEnd="4dp"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+        <Button
+            android:id="@+id/btn_reverse_landscape"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="Rev Landscape"
+            android:textSize="11sp"
+            android:textAllCaps="false"
+            android:padding="4dp"
+            style="?android:attr/buttonBarButtonStyle"/>
+
+    </LinearLayout>
+
+    <!-- Stop button -->
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:text="Stop Rotation Lock"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:textColor="#D32F2F"
+        android:padding="4dp"
+        style="?android:attr/buttonBarButtonStyle"/>
+
+</LinearLayout>
